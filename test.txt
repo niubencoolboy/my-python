@@ -1,0 +1,3 @@
+中文占几个byte，Mary had a little lamb
+It's fleece was so white as snow
+It was also tasty

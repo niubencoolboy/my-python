@@ -1,0 +1,22 @@
+%                            格式化字符串标志
+%(arg1, arg2)                变量要隔开
+%d                           整数
+%s                           字符串
+%r                           与%s不同的是 这个调试的用， %s 给用户显示用 如果包含中文，要将r修改成s
+在程序中输入中文，必须要在开头写上  #coding:utf-8
+round() 四舍五入函数
+字符串可以直接进行加减  line = line1 + line2
+print 自带\n 如果不要与下一行有换行符 在后面加,
+转义字符 \n 换行   \r 回车符（比\n的间距更大）        \t 空格            \\ 就是输出\ 
+有多行字符串的时候，用"""或者'''
+raw_input() # 不管用户输入什么 最后都会被转化成字符 如果要整数 int()  float() 等进行转化 也可以直接加字符串提示 eg:   age = raw_input("How old are you? ")
+argv   首先要从sys导入module  from sys import argv  argument 不定 执行时候 args 紧跟着脚本文件
+prompt = ">"  定义的输入提示 
+file 的操作 open(filename) 默认的参数就是r 读 还有 'w' 'w+' 'r+' 'a' 'a+'      .read()    .write() .clsoe()   truncate() 清空文件 其实有了 open(filename, 'w') 就不需要truncate() 函数了。
+from os.path import exists   exists(filename) 判断文件是否存在。
+len(file) 判断file的字节数  返回整形 即%d
+def 函数名（参数）:  千万不要忘记:  下一行空四个   参数中  *args  表示是一个args列表 参数个数不定 关键看函数体定义了几个变量，引用函数的时候根据定义的变量来。
+seek(0) #seek(0) 的左右是重新返回文件的起始位置。参数表示返回的位置。单位是byte。如果是1,2，测试程序看看结果。在这之前，read()已经读完，在文件位置的最后，如果不rewind 接下来readline() 读不出任何东西。  如果文档开头是中文，用参数1,2,3,4测试可得，在python utf-8 中，一个汉字占3个bytes。另外，ASCII编码 一个英文字母（不分大小写，也就字符，c++中常用到）占一个字节的空间，一个中文汉字占两个字节的空间。GB 2312/GBK 编码中，一个汉字字符存储需要2个字节。
+readline() 本身含义\n 
++= 运算符
+add subcrack multiply divide 加 减 乘 除 记住英文单词  函数的嵌套 详情见ex21.py
